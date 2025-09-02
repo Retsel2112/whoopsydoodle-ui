@@ -75,8 +75,16 @@ function App() {
 
       {/* Display the result if it exists */}
       {result && (
-        <div style={{ marginTop: '20px', fontWeight: 'bold' }}>
-          Whoopsy Link: {result}
+        <div>
+          <div style={{ marginTop: '20px', fontWeight: 'bold' }}>
+            Whoopsy Link: {result}
+          </div>
+          <div style={{ marginTop: '20px' }}>
+            First click site: {initialRedirect}
+          </div>
+          <div style={{ marginTop: '20px' }}>
+            Additional clicks site: {realDestination}
+          </div>
         </div>
       )}
     </div>
